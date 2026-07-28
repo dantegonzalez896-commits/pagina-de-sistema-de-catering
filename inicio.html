@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Catering</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header class="contenedor-blanco">
+        <div class="contenedor-logo">
+            <div class="logo-texto">CATERING PRO</div>
+            <h1>Banquetes y Eventos</h1>
+        </div>
+        
+        <nav>
+            <a href="#" class="icono-red facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="icono-red instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/123456789" class="icono-red whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </nav>
+    </header>
+
+    <!-- Cuerpo Principal -->
+    <div class="contenedor-columnas">
+        <main>
+            <!-- Hero Section -->
+            <div class="contenedor-blanco">
+                <img src="edusoft-party-786921_1920.jpg" alt="Servicio de buffet" class="imagen-principal">
+                <h2 class="hero-titulo">Transformamos tus eventos en experiencias inolvidables</h2>
+                <p>Ofrecemos el mejor servicio de catering para bodas, graduaciones y eventos corporativos.</p>
+            </div>
+
+            <!-- Sección de Paquetes -->
+            <div class="grid-paquetes">
+                <!-- Paquete 1 -->
+                <div class="tarjeta-paquete contenedor-blanco tarjeta-sin-padding">
+                    <img src="tenario1-wedding-4993025_1920.jpg" alt="Paquete Clásico">
+                    <div class="info-paquete">
+                        <h3>Paquete Clásico</h3>
+                        <p>Deliciosa selección tradicional para eventos familiares.</p>
+                    </div>
+                </div>
+
+                <!-- Paquete 2 -->
+                <div class="tarjeta-paquete contenedor-blanco tarjeta-sin-padding">
+                    <img src="tenario1-wedding-4993027_1920.jpg" alt="Paquete Premium">
+                    <div class="info-paquete">
+                        <h3>Paquete del Mar</h3>
+                        <p>Especialidad en salmón y cortes finos para impresionar.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Cotizador Interactivo -->
+        <div class="cotizador-basico">
+            <h3>Arma tu Menú</h3>
+            
+            <label for="paquete"><strong>Elige tu paquete:</strong></label><br>
+            <select id="paquete" class="cotizador-input">
+                <option value="150" data-nombre="Paquete Clásico">Paquete Clásico ($150 p/p)</option>
+                <option value="250" data-nombre="Paquete del Mar">Paquete del Mar ($250 p/p)</option>
+                <option value="350" data-nombre="Paquete Premium">Paquete Premium ($350 p/p)</option>
+            </select>
+            
+            <label for="invitados"><strong>Número de invitados:</strong></label><br>
+            <input type="number" id="invitados" value="50" min="20" class="cotizador-input">
+            
+            <h4 class="cotizador-total">Total Estimado: $<span id="totalEstimado">7500</span></h4>
+
+            <button id="btnWhatsapp" class="btn-cotizador">
+                Confirmar por WhatsApp
+            </button>
+        </div>
+            
+        <!-- ASIDE: Barra Lateral -->
+        <aside class="contenedor-blanco">
+            <img src="mampu-covered-5137932_1920.jpg" alt="Cubiertos elegantes" class="imagen-decorativa">
+            
+            <h3>¿Listo para tu evento?</h3>
+            <p class="aside-texto">Cotiza hoy mismo sin compromiso y asegura tu fecha.</p>
+            
+            <a href="https://wa.me/123456789" class="btn-principal" target="_blank">
+                <i class="fab fa-whatsapp"></i> Cotizar por WhatsApp
+            </a>
+            
+            <hr class="aside-separador">
+            
+            <h4>Horarios de Atención</h4>
+            <p class="aside-horarios">Lunes a Sábado<br>9:00 AM - 7:00 PM</p>
+        </aside>
+    </div>
+
+    <!-- Sección de Testimonios -->
+    <section class="contenedor-testimonios">
+        <h2 class="titulo-seccion">Lo que dicen nuestros clientes</h2>
+        
+        <div class="grid-testimonios">
+            <div class="tarjeta-testimonio">
+                <p class="texto-testimonio">"El Paquete del Mar fue un éxito total en nuestra graduación. El salmón estaba en su punto y el servicio impecable."</p>
+                <h4 class="autor-testimonio">- Ana García</h4>
+                <span class="estrellas">⭐⭐⭐⭐⭐</span>
+            </div>
+
+            <div class="tarjeta-testimonio">
+                <p class="texto-testimonio">"Contratamos el Paquete Clásico para el aniversario de la empresa. Todo súper puntual, caliente y con excelente presentación."</p>
+                <h4 class="autor-testimonio">- Roberto M. (Corporativo)</h4>
+                <span class="estrellas">⭐⭐⭐⭐⭐</span>
+            </div>
+
+            <div class="tarjeta-testimonio">
+                <p class="texto-testimonio">"Increíble atención desde la cotización por WhatsApp hasta el día del evento. Muy recomendados para eventos familiares."</p>
+                <h4 class="autor-testimonio">- Familia Valdez</h4>
+                <span class="estrellas">⭐⭐⭐⭐⭐</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Preguntas Frecuentes -->
+    <section class="contenedor-faq">
+        <h2 class="titulo-seccion text-center">Preguntas Frecuentes</h2>
+
+        <details class="faq-item">
+            <summary class="faq-pregunta">¿Con cuánto tiempo de anticipación debo reservar?</summary>
+            <p class="faq-respuesta">Para asegurar tu fecha, recomendamos reservar con al menos 2 semanas de anticipación para eventos pequeños y 2 meses para bodas o eventos corporativos grandes.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary class="faq-pregunta">¿Los paquetes incluyen servicio de meseros y cristalería?</summary>
+            <p class="faq-respuesta">El precio de los paquetes base incluye alimentos y equipo de buffet. El servicio de meseros, loza y cristalería se cotiza por separado según el número de invitados.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary class="faq-pregunta">¿Tienen opciones vegetarianas o para niños?</summary>
+            <p class="faq-respuesta">¡Sí! Contamos con menús especiales que puedes agregar a tu cotización al momento de contactarnos por WhatsApp.</p>
+        </details>
+    </section>
+
+    <!-- Script del Cotizador -->
+    <script src="cotizador.js"></script>
+</body>
+</html>
